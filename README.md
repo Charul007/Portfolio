@@ -1,3 +1,1 @@
-# my-portfolio 
-
-#To view a demo example, **[click here](https://ritik-patidar.netlify.app/)**\
+# To View My Portfolio, **[click here](https://ritik-patidar.netlify.app/)**
