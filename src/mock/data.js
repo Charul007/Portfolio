@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 export const headData = {
   title: 'Ritik Patidar | Developer',
   lang: 'en',
-  description: 'Welcome to my portfolio',
+  description: 'Ritik Patidar | Developer',
 };
 
 export const heroData = {
