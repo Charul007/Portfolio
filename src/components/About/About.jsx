@@ -29,7 +29,7 @@ const About = () => {
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
+              <div className="about-wrapper__image px-4">
               <div className="rounded-circle" style={{ border: "20px solid #1e3d3b" }} >
                   <div className="rounded-circle" style={{ border: "10px solid #24a78c" }} >
                     <AboutImg alt="profile picture"  filename={img} />
