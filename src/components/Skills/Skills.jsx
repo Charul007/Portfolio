@@ -36,7 +36,7 @@ const Skills = () => {
                     right={isDesktop}
                     bottom={isMobile}
                     duration={1000}
-                    delay={1000}
+                    delay={600}
                     distance="50px"
                   >
                     <div className="project-wrapper__image">

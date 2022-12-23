@@ -23,7 +23,7 @@ const Projects = () => {
   }, []);
 
   return (
-    projects.length && <section id="projects">
+    projects.length ? <section id="projects">
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
@@ -112,7 +112,7 @@ const Projects = () => {
           })}
         </div>
       </Container>
-    </section>
+    </section> : <></>
   );
 };
 
