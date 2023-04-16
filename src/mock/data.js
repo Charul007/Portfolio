@@ -15,7 +15,8 @@ export const heroData = {
 
 export const aboutData = {
   img: 'me.jpg',
-  paragraphOne: 'I am a Computer Science Engineering graduate, currently working as a Full Stack Developer. I am much interested in developing new things which excite me a lot.',
+  paragraphOne:
+    'I am a Computer Science Engineering graduate, currently working as a Full Stack Developer. I am much interested in developing new things which excite me a lot.',
   paragraphTwo: 'I love exploring new technologies and being a practitioner.',
   paragraphThree: '',
   resume: 'https://drive.google.com/file/d/1U_O5DhMUaHwZf3pSHFvLw4HH__83t4QL/view?usp=sharing',
@@ -100,7 +101,7 @@ export const skillsData = [
     title: 'NodeJS',
     info: '',
     info2: '',
-    url: 'https://nodejs.org/en/'
+    url: 'https://nodejs.org/en/',
   },
   {
     id: nanoid(),
@@ -108,7 +109,7 @@ export const skillsData = [
     title: 'MongoDB',
     info: '',
     info2: '',
-    url: 'https://www.mongodb.com/'
+    url: 'https://www.mongodb.com/',
   },
   {
     id: nanoid(),
@@ -116,9 +117,9 @@ export const skillsData = [
     title: 'Python',
     info: '',
     info2: '',
-    url: 'https://www.python.org/'
+    url: 'https://www.python.org/',
   },
-]
+];
 
 export const projectsData = [
   // {
@@ -134,10 +135,10 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  title : 'Contact',
+  title: 'Contact',
   cta: 'Would you like to connect with me? Awesome!',
   btn: "Let's Connect",
-  linkedIn: "https://www.linkedin.com/in/ritik-patidar/",
+  linkedIn: 'https://www.linkedin.com/in/ritik-patidar/',
   email: '',
 };
 
@@ -158,5 +159,5 @@ export const footerData = {
 };
 
 export const githubButtons = {
-  isEnabled: false
+  isEnabled: false,
 };
