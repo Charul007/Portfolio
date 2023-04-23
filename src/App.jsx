@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Hero from './Hero/Hero';
-import About from './About/About';
-import Skills from './Skills/Skills';
-import Projects from './Projects/Projects';
-import Contact from './Contact/Contact';
-import Footer from './Footer/Footer';
+import Hero from '../components/Hero/Hero';
+import About from '../components/About/About';
+import Skills from '../components/Skills/Skills';
+import Projects from '../components/Projects/Projects';
+import Contact from '../components/Contact/Contact';
+import Footer from '../components/Footer/Footer';
 import { PortfolioProvider } from '../context/context';
 
 import {
@@ -16,7 +16,7 @@ import {
   footerData,
 } from '../mock/data';
 
-function Home() {
+function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [skills, setSkills] = useState([]);
@@ -45,4 +45,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default App;
