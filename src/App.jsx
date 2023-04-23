@@ -22,7 +22,7 @@ function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [skills, setSkills] = useState([]);
-  const [projects, setProjects] = useState({projects:[]});
+  const [projects, setProjects] = useState({projects:[],seeMore:{}});
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
 
@@ -36,8 +36,6 @@ function App() {
     setContact({ ...contactData });
     setFooter({ ...footerData });
   }, []);
-
-  console.log("project " , projects)
 
   return (
     <>
