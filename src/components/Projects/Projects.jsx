@@ -5,9 +5,12 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import { Link } from 'react-scroll';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
+
+  const { link, cta } = projects.seeMore;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -22,17 +25,17 @@ const Projects = () => {
     }
   }, []);
 
-  return projects.length ? (
+  return projects && projects?.projects.length ? (
     <section id="projects">
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          {projects.map((project) => {
+          {projects?.projects.map((project) => {
             const { title, info, info2, url, repo, img, id } = project;
 
             return (
               <Row key={id}>
-                <Col lg={4} sm={12}>
+                <Col lg={4} sm={12} className='d-flex align-items-center'>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -110,6 +113,21 @@ const Projects = () => {
               </Row>
             );
           })}
+          {
+            cta &&
+            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+              <p className="hero-cta">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={link}
+                  className="cta-btn cta-btn--hero"
+                >
+                  {cta || ''}
+                </a>
+              </p>
+            </Fade>
+          }
         </div>
       </Container>
     </section>

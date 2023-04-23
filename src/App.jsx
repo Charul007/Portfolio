@@ -6,6 +6,8 @@ import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import { PortfolioProvider } from './context/context';
+import { Helmet } from 'react-helmet';
+import { headData } from './info/data';
 
 import {
   heroData,
@@ -14,34 +16,47 @@ import {
   projectsData,
   contactData,
   footerData,
-} from './mock/data';
+} from './info/data';
 
 function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [skills, setSkills] = useState([]);
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState({projects:[]});
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
+
+  const { title, lang, description } = headData;
 
   useEffect(() => {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
     setSkills([...skillsData]);
-    setProjects([...projectsData]);
+    setProjects({...projectsData});
     setContact({ ...contactData });
     setFooter({ ...footerData });
   }, []);
 
+  console.log("project " , projects)
+
   return (
-    <PortfolioProvider value={{ hero, about, skills, projects, contact, footer }}>
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </PortfolioProvider>
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title || 'Ritik Patidar | Developer'}</title>
+        <html lang={lang || 'en'} />
+        <meta name="keywords" content="Ritik,Patidar ,Ritik Patidar, Developer,MERN Developer" />
+        <meta name="description" content={description || 'Ritik Patidar | Developer'} />
+      </Helmet>
+      <PortfolioProvider value={{ hero, about, skills, projects, contact, footer }}>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </PortfolioProvider>
+    </>
   );
 }
 

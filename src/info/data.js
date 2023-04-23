@@ -121,17 +121,42 @@ export const skillsData = [
   },
 ];
 
-export const projectsData = [
-  // {
-  //   id: nanoid(),
-  //   img: 'project.jpg',
-  //   title: '',
-  //   info: '',
-  //   info2: '',
-  //   url: '',
-  //   repo: 'https://github.com/Ritik-Patidar/projectName',
-  // },
-];
+// PROJECT DATA
+export const projectsData = {
+  projects: [
+    {
+      id: nanoid(),
+      img: 'projects/news.jpg',
+      title: 'News App-Web Version',
+      info: 'A Web application where one can read the latest news articles.',
+      info2: 'This news articles are sorted into different categories like General, Entertainment, Business, Health, Sports, and Technology.',
+      url: 'https://github.com/Ritik-Patidar/NewsApp-Web',
+      repo: 'https://github.com/Ritik-Patidar/NewsApp-Web',
+    },
+    {
+      id: nanoid(),
+      img: 'projects/password-generator.jpg',
+      title: 'Password Generator',
+      info: 'A tool to Instantly generate a secure, random password and save it online.',
+      info2: '',
+      url: 'https://pass-wordgenerator.netlify.app/',
+      repo: 'https://github.com/Ritik-Patidar/password-generator',
+    },
+    {
+      id: nanoid(),
+      img: 'projects/youtube.jpg',
+      title: 'Youtube Clone',
+      info: 'Clone of youtube app.',
+      info2: 'here you can stream videos just like youtube.',
+      url: 'https://y-tube-clone.netlify.app',
+      repo: 'https://github.com/Ritik-Patidar/youtube_clone',
+    },
+  ],
+  seeMore : {
+    cta: 'See more on github',
+    link: 'https://github.com/Ritik-Patidar'
+  }
+};
 
 // CONTACT DATA
 export const contactData = {
