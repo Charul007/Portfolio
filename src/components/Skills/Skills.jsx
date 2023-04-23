@@ -26,12 +26,12 @@ const Skills = () => {
     <section id="skills">
       <Container>
         <div className="skills-wrapper">
-          <Title title="Skills" />
+          <Title title="My Expertise" />
           <Row>
             {skills.map((skill) => {
               const { title, info, info2, url, img, id } = skill;
               return (
-                <Col key={id} lg={3} sm={6}>
+                <Col key={id} lg={3} sm={4} xs={4}>
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
@@ -59,19 +59,19 @@ const Skills = () => {
                           aria-label="Project Link"
                           rel="noopener noreferrer"
                         >
-                          <div className="d-flex border flex-column justify-content-start align-items-center py-5 mb-4 rounded-2 bg-skill">
+                          <div className="d-flex border flex-column justify-content-start align-items-center py-sm-5 mb-4 rounded-2 bg-skill">
                             <div
                               data-tilt
                               className="d-flex flex-column justify-content-center align-items-center rounded-circle"
                             >
                               <div
-                                className="shadow-lg rounded-circle p-3 bg-white"
+                                className="shadow-lg rounded-circle p-3 mt-3 mt-sm-0 bg-white"
                                 style={{ height: '60px', width: '60px' }}
                               >
                                 <SkillImg alt={title} filename={img} />
                               </div>
                             </div>
-                            <p className="mt-5 text-center  text-sm ">{title}</p>
+                            <p className="skills-text mt-3 mt-sm-5 text-center">{title}</p>
                           </div>
                         </a>
                       </Tilt>
