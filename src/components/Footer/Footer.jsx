@@ -36,6 +36,7 @@ const Footer = () => {
             })}
         </div>
         <hr />
+        <p className='mt-2'>@Ritik-Patidar</p>
       </Container>
     </footer>
   );
