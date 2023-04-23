@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -29,7 +29,7 @@ const Skills = () => {
           <Title title="My Expertise" />
           <Row>
             {skills.map((skill) => {
-              const { title, info, info2, url, img, id } = skill;
+              const { title, url, img, id } = skill;
               return (
                 <Col key={id} lg={3} sm={4} xs={4}>
                   <Fade

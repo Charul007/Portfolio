@@ -1,14 +1,14 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
-import { githubButtons } from '../../info/data';
+// import { githubButtons } from '../../info/data';
 
 const Footer = () => {
   const { footer } = useContext(PortfolioContext);
   const { networks } = footer;
-  const { isEnabled } = githubButtons;
+  // const { isEnabled } = githubButtons;
 
   return (
     <footer className="footer navbar-static-bottom">
