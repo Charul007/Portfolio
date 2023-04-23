@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import '../style/main.scss';
 import Hero from '../components/Hero/Hero';
@@ -11,7 +10,6 @@ import Footer from '../components/Footer/Footer';
 import { PortfolioProvider } from '../context/context';
 
 import {
-  headData,
   heroData,
   aboutData,
   skillsData,
@@ -20,9 +18,7 @@ import {
   footerData,
 } from '../mock/data';
 
-const Home = () => {
-  const { title, lang, description } = headData;
-
+export default function Home() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [skills, setSkills] = useState([]);
@@ -41,13 +37,6 @@ const Home = () => {
 
   return (
     <>
-      <Head>
-        <meta charSet="utf-8" />
-        <title>{title || 'Ritik Patidar | Developer'}</title>
-        <html lang={lang || 'en'} />
-        <meta name="keywords" content="Ritik,Patidar ,Ritik Patidar, Developer,MERN Developer" />
-        <meta name="description" content={description || 'Ritik Patidar | Developer'} />
-      </Head>
       <PortfolioProvider value={{ hero, about, skills, projects, contact, footer }}>
         <Hero />
         <About />
@@ -59,5 +48,3 @@ const Home = () => {
     </>
   );
 };
-
-export default Home;
