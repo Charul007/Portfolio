@@ -121,6 +121,31 @@ export const skillsData = [
   },
 ];
 
+// EXPERIENCE DATA
+export const experienceData = [
+  {
+    title: 'Web Developer',
+    company_name: 'Rudiment Webtech Solution, Indore',
+    icon: 'experience/coverhunt.png',
+    iconBg: '#333333',
+    date: 'Jun 2021 - Dec 2022',
+  },
+  {
+    title: 'Product Engineer',
+    company_name: 'RNLP Consulting & Technology Services Pvt Ltd, Bangalore',
+    icon: 'experience/microverse.png',
+    iconBg: '#333333',
+    date: 'Jan 2022 - Jul 2022',
+  },
+  {
+    title: 'Full Stack Developer',
+    company_name: 'Tops Infosolutions Pvt Ltd, Ahmedabad',
+    icon: 'experience/dcc.png',
+    iconBg: '#333333',
+    date: 'Jul 2022 - Present',
+  },
+];
+
 // PROJECT DATA
 export const projectsData = {
   projects: [

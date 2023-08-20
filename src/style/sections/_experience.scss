@@ -1,0 +1,86 @@
+#experience {
+  background-color: $white-color;
+  color: $dark-blue-text;
+  margin-top: -15rem;
+
+  @include respond(tab-land) {
+    margin-top: 0;
+    padding-top: 5rem;
+  }
+
+  // bg-experience bg-cover bg-center bg-no-repeat rounded-tl-[150px] rounded-br-[150px]
+//   background-image: linear-gradient(
+//       135deg,
+//       rgba(244, 244, 246, 0.5) 60%,
+//       rgba(10, 10, 10, 0.2) 100%
+//     ),
+//     url('./public/backgrounds/white-abstract.jpg');
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   border-top-left-radius: 150px;
+//   border-bottom-right-radius: 150px;
+
+  // bg-experienceLight bg-cover bg-center bg-no-repeat rounded-tl-[150px] rounded-br-[130px]
+//   .experience-container {
+//     background-image: linear-gradient(
+//       137deg,
+//       rgba(244, 244, 246, 0.5) 0%,
+//       rgb(51, 51, 51, 0.9) 60%
+//     );
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     border-top-left-radius: 150px;
+//     border-bottom-right-radius: 130px;
+//   }
+
+  // sm:px-16 sm:py-16
+  .experience-section {
+    padding: 24px 40px;
+    max-width: 1280px ;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 0;
+    @media (min-width: 640px) {
+      padding: 64px;
+    }
+  }
+
+  // /text-jetLight text-[24px] font-bold font-beckman tracking-[2px]
+  .experience-position {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: $text-primary;
+  }
+  // text-taupe text-[22px] font-semibold font-overcameBold tracking-[1px]
+  .experience-company_name {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: $text-secondary;
+  }
+  // text-dim text-[18px] font-bold font-beckman
+  .experience-date {
+    font-size: 18px;
+    font-weight: bold;
+    color: $text-primary;
+  }
+  // flex justify-center items-center w-full h-full
+  .experience-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    // w-[60%] h-[60%] object-contain
+    img {
+      width: 60%;
+      height: 60%;
+      object-fit: contain;
+    }
+  }
+}
