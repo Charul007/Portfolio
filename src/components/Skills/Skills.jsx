@@ -26,7 +26,7 @@ const Skills = () => {
     <section id="skills">
       <Container>
         <div className="skills-wrapper">
-          <Title title="My Expertise" />
+          <Title title="MY SKILLS"/>
           <Row>
             {skills.map((skill) => {
               const { title, url, img, id } = skill;

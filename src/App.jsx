@@ -16,12 +16,15 @@ import {
   projectsData,
   contactData,
   footerData,
+  experienceData
 } from './info/data';
+import Experience from './components/Experience';
 
 function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [skills, setSkills] = useState([]);
+  const [experiences, setExperiences] = useState([]);
   const [projects, setProjects] = useState({projects:[],seeMore:{}});
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
@@ -32,6 +35,7 @@ function App() {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
     setSkills([...skillsData]);
+    setExperiences([...experienceData])
     setProjects({...projectsData});
     setContact({ ...contactData });
     setFooter({ ...footerData });
@@ -46,10 +50,11 @@ function App() {
         <meta name="keywords" content="Ritik,Patidar ,Ritik Patidar, Developer,MERN Developer" />
         <meta name="description" content={description || 'Ritik Patidar | Developer'} />
       </Helmet>
-      <PortfolioProvider value={{ hero, about, skills, projects, contact, footer }}>
+      <PortfolioProvider value={{ hero, about, skills, experiences, projects, contact, footer }}>
         <Hero />
         <About />
         <Skills />
+        <Experience />
         <Projects />
         <Contact />
         <Footer />
