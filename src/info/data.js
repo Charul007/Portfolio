@@ -133,14 +133,14 @@ export const experienceData = [
   {
     title: 'Product Engineer',
     company_name: 'RNLP Consulting & Technology Services Pvt Ltd, Bangalore',
-    icon: 'experience/microverse.png',
+    icon: 'experience/RNLP.svg',
     iconBg: '#333333',
     date: 'Jan 2022 - Jul 2022',
   },
   {
     title: 'Full Stack Developer',
     company_name: 'Tops Infosolutions Pvt Ltd, Ahmedabad',
-    icon: 'experience/dcc.png',
+    icon: 'experience/Tops-Infosolutions.svg',
     iconBg: '#333333',
     date: 'Jul 2022 - Present',
   },
