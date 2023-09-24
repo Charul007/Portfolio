@@ -1,1 +1,1 @@
-# To View My Portfolio, **[click here](https://ritik-patidar.netlify.app/)**
+# To View My Portfolio, **[click here](https://charulpatidar.netlify.app/)**
