@@ -23,8 +23,8 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about">
-      <Container>
+    <section id="about" >
+      <Container style={{backgroundColor:'black'}}>
         <Title title="About Me" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>

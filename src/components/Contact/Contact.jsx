@@ -9,8 +9,8 @@ const Contact = () => {
   const { cta, btn, email, title, linkedIn } = contact;
 
   return (
-    <section id="contact">
-      <Container>
+    <section id="contact"  style={{backgroundColor:'black',color:'white'}} >
+      <Container  style={{backgroundColor:'black',color:'white'}} >
         <Title title={title} />
         <Fade bottom duration={1000} delay={600} distance="30px">
           <div className="contact-wrapper">

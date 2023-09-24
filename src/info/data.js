@@ -1,25 +1,25 @@
 import { nanoid } from 'nanoid';
 
 export const headData = {
-  title: 'Ritik Patidar | Developer',
+  title: 'Charul Patidar | Developer',
   lang: 'en',
-  description: 'Ritik Patidar | Developer',
+  description: 'Charul Patidar | Developer',
 };
 
 export const heroData = {
   title: '',
-  name: 'Ritik Patidar',
-  subtitle: "I'm Web Developer",
+  name: 'Charul Patidar',
+  subtitle: "I'm Full Stack Developer",
   cta: '',
 };
 
 export const aboutData = {
   img: 'me.jpg',
   paragraphOne:
-    'I am a Computer Science Engineering graduate, currently working as a Full Stack Developer. I am much interested in developing new things which excite me a lot.',
+    'I am  currently working as a Full Stack Developer. I am much interested in developing new things which excite me a lot.',
   paragraphTwo: 'I love exploring new technologies and being a practitioner.',
   paragraphThree: '',
-  resume: 'https://drive.google.com/file/d/1U_O5DhMUaHwZf3pSHFvLw4HH__83t4QL/view?usp=sharing',
+  resume: 'https://www.canva.com/design/DAFtk0Y6RME/UCC73gLIAZrI15FrH6V3VQ/view?utm_content=DAFtk0Y6RME&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
 };
 
 export const skillsData = [
@@ -33,11 +33,11 @@ export const skillsData = [
   },
   {
     id: nanoid(),
-    img: 'skills/typescript-colored.jpg',
-    title: 'TypeScript',
+    img: 'skills/mysql-colored.jpg',
+    title: 'MySql',
     info: '',
     info2: '',
-    url: 'https://www.typescriptlang.org',
+    url: 'https://www.mysql.com/',
   },
   {
     id: nanoid(),
@@ -46,14 +46,6 @@ export const skillsData = [
     info: '',
     info2: '',
     url: 'https://reactjs.org/',
-  },
-  {
-    id: nanoid(),
-    img: 'skills/react-colored.jpg',
-    title: 'React Native',
-    info: '',
-    info2: '',
-    url: 'https://reactnative.dev/',
   },
   {
     id: nanoid(),
@@ -73,28 +65,20 @@ export const skillsData = [
   },
   {
     id: nanoid(),
-    img: 'skills/tailwindcss-colored.jpg',
-    title: 'Tailwind CSS',
-    info: '',
-    info2: '',
-    url: 'https://tailwindcss.com/',
-  },
-  {
-    id: nanoid(),
     img: 'skills/bootstrap-colored.jpg',
     title: 'Bootstrap',
     info: '',
     info2: '',
     url: 'https://getbootstrap.com/',
   },
-  {
-    id: nanoid(),
-    img: 'skills/materialui-colored.jpg',
-    title: 'Material UI',
-    info: '',
-    info2: '',
-    url: 'https://mui.com/',
-  },
+  // {
+  //   id: nanoid(),
+  //   img: 'skills/materialui-colored.jpg',
+  //   title: 'Material UI',
+  //   info: '',
+  //   info2: '',
+  //   url: 'https://mui.com/',
+  // },
   {
     id: nanoid(),
     img: 'skills/nodejs-colored.jpg',
@@ -113,13 +97,40 @@ export const skillsData = [
   },
   {
     id: nanoid(),
-    img: 'skills/python-colored.jpg',
-    title: 'Python',
+    img: 'skills/c-shap.jpg',
+    title: 'C#',
     info: '',
     info2: '',
-    url: 'https://www.python.org/',
+    url: 'https://www.c-sharpcorner.com/csharp-tutorials',
   },
+  {
+    id: nanoid(),
+    img: 'skills/Asp-Net-MVC.jpg',
+    title: 'Asp.Net',
+    info: '',
+    info2: '',
+    url: 'https://dotnet.microsoft.com/en-us/apps/aspnet',
+  },
+  {
+    id: nanoid(),
+    img: 'skills/java.jpg',
+    title: 'JAVA',
+    info: '',
+    info2: '',
+    url: 'https://www.java.com/en/',
+  },
+  {
+    id: nanoid(),
+    img: 'skills/Springboot.jpg',
+    title: 'Spring Boot',
+    info: '',
+    info2: '',
+    url: 'https://spring.io/projects/spring-boot/',
+  },
+
 ];
+
+
 
 // EXPERIENCE DATA
 export const experienceData = [
@@ -129,20 +140,6 @@ export const experienceData = [
     icon: 'experience/coverhunt.png',
     iconBg: '#333333',
     date: 'Jun 2021 - Dec 2022',
-  },
-  {
-    title: 'Product Engineer',
-    company_name: 'RNLP Consulting & Technology Services Pvt Ltd, Bangalore',
-    icon: 'experience/RNLP.svg',
-    iconBg: '#333333',
-    date: 'Jan 2022 - Jul 2022',
-  },
-  {
-    title: 'Full Stack Developer',
-    company_name: 'Tops Infosolutions Pvt Ltd, Ahmedabad',
-    icon: 'experience/Tops-Infosolutions.svg',
-    iconBg: '#333333',
-    date: 'Jul 2022 - Present',
   },
 ];
 
@@ -158,28 +155,10 @@ export const projectsData = {
       url: 'https://github.com/Ritik-Patidar/NewsApp-Web',
       repo: 'https://github.com/Ritik-Patidar/NewsApp-Web',
     },
-    {
-      id: nanoid(),
-      img: 'projects/password-generator.jpg',
-      title: 'Password Generator',
-      info: 'A tool to Instantly generate a secure, random password and save it online.',
-      info2: '',
-      url: 'https://pass-wordgenerator.netlify.app/',
-      repo: 'https://github.com/Ritik-Patidar/password-generator',
-    },
-    {
-      id: nanoid(),
-      img: 'projects/youtube.jpg',
-      title: 'Youtube Clone',
-      info: 'Clone of youtube app.',
-      info2: 'here you can stream videos just like youtube.',
-      url: 'https://y-tube-clone.netlify.app',
-      repo: 'https://github.com/Ritik-Patidar/youtube_clone',
-    },
   ],
   seeMore : {
     cta: 'See more on github',
-    link: 'https://github.com/Ritik-Patidar'
+    link: 'https://github.com/Charul007',
   }
 };
 
@@ -188,7 +167,7 @@ export const contactData = {
   title: 'Contact',
   cta: 'Would you like to connect with me? Awesome!',
   btn: "Let's Connect",
-  linkedIn: 'https://www.linkedin.com/in/ritik-patidar/',
+  linkedIn: 'https://www.linkedin.com/in/charul-patidar-981975170/',
   email: '',
 };
 
@@ -198,12 +177,12 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'linkedin',
-      url: 'https://www.linkedin.com/in/ritik-patidar',
+      url: 'https://www.linkedin.com/in/charul-patidar-981975170/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: 'https://github.com/Ritik-Patidar',
+      url: 'https://github.com/Charul007',
     },
   ],
 };

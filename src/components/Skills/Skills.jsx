@@ -23,9 +23,9 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills">
+    <section id="skills" style={{backgroundColor:'black',color:'white'}} >
       <Container>
-        <div className="skills-wrapper">
+        <div className="skills-wrapper" >
           <Title title="MY SKILLS"/>
           <Row>
             {skills.map((skill) => {
@@ -39,7 +39,7 @@ const Skills = () => {
                     delay={600}
                     distance="50px"
                   >
-                    <div className="project-wrapper__image">
+                    <div className="project-wrapper__image" >
                       <Tilt
                         options={{
                           reverse: false,
@@ -66,7 +66,7 @@ const Skills = () => {
                             >
                               <div
                                 className="shadow-lg rounded-circle p-3 mt-3 mt-sm-0 bg-white"
-                                style={{ height: '60px', width: '60px' }}
+                                style={{ height: '60px', width: '60px', }}
                               >
                                 <SkillImg alt={title} filename={img} />
                               </div>

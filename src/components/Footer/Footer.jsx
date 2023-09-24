@@ -11,7 +11,7 @@ const Footer = () => {
   // const { isEnabled } = githubButtons;
 
   return (
-    <footer className="footer navbar-static-bottom">
+    <footer className="footer navbar-static-bottom"  style={{backgroundColor:'black',color:'white'}} >
       <Container>
         <span className="back-to-top">
           <Link to="hero" smooth duration={1000}>
@@ -25,7 +25,7 @@ const Footer = () => {
               return (
                 <a
                   key={id}
-                  href={url || 'https://www.linkedin.com/in/ritik-patidar/'}
+                  href={url || 'https://www.linkedin.com/in/charul-patidar-981975170/'}
                   rel="noopener noreferrer"
                   target="_blank"
                   aria-label={name}
@@ -36,7 +36,7 @@ const Footer = () => {
             })}
         </div>
         <hr />
-        <p className='mt-2'>@Ritik-Patidar</p>
+        <p className='mt-2'>@Charul-Patidar</p>
       </Container>
     </footer>
   );

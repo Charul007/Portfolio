@@ -43,19 +43,19 @@ function App() {
 
   return (
     <>
-      <Helmet>
+      <Helmet >
         <meta charSet="utf-8" />
         <title>{title || 'Ritik Patidar | Developer'}</title>
         <html lang={lang || 'en'} />
         <meta name="keywords" content="Ritik,Patidar ,Ritik Patidar, Developer,MERN Developer" />
         <meta name="description" content={description || 'Ritik Patidar | Developer'} />
       </Helmet>
-      <PortfolioProvider value={{ hero, about, skills, experiences, projects, contact, footer }}>
+      <PortfolioProvider value={{ hero, about, skills, experiences, projects, contact, footer }} >
         <Hero />
         <About />
         <Skills />
-        <Experience />
-        <Projects />
+        {/* <Experience /> */}
+        {/* <Projects /> */}
         <Contact />
         <Footer />
       </PortfolioProvider>
