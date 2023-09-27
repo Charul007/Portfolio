@@ -16,7 +16,7 @@ export const heroData = {
 export const aboutData = {
   img: 'me.jpg',
   paragraphOne:
-    'I am  currently working as a Full Stack Developer. I am much interested in developing new things which excite me a lot.',
+    'I am  currently working as a Full Stack Developer. I am very much interested in developing new things which excite me a lot.',
   paragraphTwo: 'I love exploring new technologies and being a practitioner.',
   paragraphThree: '',
   resume: 'https://www.canva.com/design/DAFtk0Y6RME/UCC73gLIAZrI15FrH6V3VQ/view?utm_content=DAFtk0Y6RME&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink',
@@ -148,16 +148,16 @@ export const projectsData = {
   projects: [
     {
       id: nanoid(),
-      img: 'projects/news.jpg',
-      title: 'News App-Web Version',
-      info: 'A Web application where one can read the latest news articles.',
-      info2: 'This news articles are sorted into different categories like General, Entertainment, Business, Health, Sports, and Technology.',
-      url: 'https://github.com/Ritik-Patidar/NewsApp-Web',
-      repo: 'https://github.com/Ritik-Patidar/NewsApp-Web',
+      img: 'projects/pixelSpot.jpg',
+      title: 'PixelSpot',
+      info: 'PixelSpot is your go-to platform for photo management, sharing, and community interaction. It provides secure photo backup, intuitive organization, and selective sharing. Plus, users can engage with the community by liking and disliking photos.',
+      info2: 'Technology :  ASP.Net WebApi (C#), MySql Server, React JS.Tools : Visual Studio, Git, VS Code , Figma, Draw IO',
+      url: 'https://pixelspot.netlify.app/',
+      repo: 'https://github.com/Charul007/PixelSpotFrontEnd.git',
     },
   ],
   seeMore : {
-    cta: 'See more on github',
+    cta: 'See More On Github',
     link: 'https://github.com/Charul007',
   }
 };

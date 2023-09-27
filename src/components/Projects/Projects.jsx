@@ -25,7 +25,7 @@ const Projects = () => {
   }, []);
 
   return projects && projects?.projects.length ? (
-    <section id="projects">
+    <section id="projects" style={{backgroundColor:'black', color:'white'}}>
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
@@ -101,7 +101,7 @@ const Projects = () => {
                             easing: 'cubic-bezier(.03,.98,.52,.99)',
                           }}
                         >
-                          <div data-tilt className="thumbnail rounded">
+                          <div data-tilt className="thumbnail rounded" style={{border: 'solid', borderColor:'white',borderWidth:'thick'}}>
                             <ProjectImg alt={title} filename={img} />
                           </div>
                         </Tilt>
@@ -115,12 +115,13 @@ const Projects = () => {
           {
             cta &&
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <p className="hero-cta">
+              <p className="hero-cta"  >
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href={link}
                   className="cta-btn cta-btn--hero"
+                  
                 >
                   {cta || ''}
                 </a>
