@@ -155,6 +155,15 @@ export const projectsData = {
       url: 'https://pixelspot.netlify.app/',
       repo: 'https://github.com/Charul007/PixelSpotFrontEnd.git',
     },
+    {
+      id: nanoid(),
+      img: 'projects/todo.jpg',
+      title: 'Todo List',
+      info: 'Your To-Do List is a user-friendly task management application designed to streamline task organization and productivity. It offers essential features, such as task creation, deletion, and completion tracking. Users can also easily review completed tasks for a more organized and efficient workflow.',
+      info2: 'Technology :  React JS, CSS, JavaSript',
+      url: 'https://charul-todo.netlify.app/',
+      repo: 'https://github.com/Charul007/TodoList.git',
+    },
   ],
   seeMore : {
     cta: 'See More On Github',
