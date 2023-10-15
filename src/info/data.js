@@ -14,7 +14,7 @@ export const heroData = {
 };
 
 export const aboutData = {
-  img: 'me.jpg',
+  img: 'Profile.jpg',
   paragraphOne:
     'I am  currently working as a Full Stack Developer. I am very much interested in developing new things which excite me a lot.',
   paragraphTwo: 'I love exploring new technologies and being a practitioner.',
