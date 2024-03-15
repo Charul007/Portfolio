@@ -19,6 +19,7 @@ import {
   experienceData
 } from './info/data';
 import Experience from './components/Experience';
+// import Resume from './components/About/Resume';
 
 function App() {
   const [hero, setHero] = useState({});
@@ -45,16 +46,19 @@ function App() {
     <>
       <Helmet >
         <meta charSet="utf-8" />
-        <title>{title || 'Ritik Patidar | Developer'}</title>
+        <title>{title || 'Charul Patidar | Developer'}</title>
         <html lang={lang || 'en'} />
-        <meta name="keywords" content="Ritik,Patidar ,Ritik Patidar, Developer,MERN Developer" />
-        <meta name="description" content={description || 'Ritik Patidar | Developer'} />
+        <meta name="keywords" content="Charul,Patidar ,Charul Patidar, Developer,FullStack Developer" />
+        <meta name="description" content={description || 'Charul Patidar | Developer'} />
       </Helmet>
       <PortfolioProvider value={{ hero, about, skills, experiences, projects, contact, footer }} >
         <Hero />
         <About />
+        {/* <Routes>
+          <Route path='/' element={<Resume />} />
+        </Routes> */}
         <Skills />
-        {/* <Experience /> */}
+        <Experience />
         <Projects />
         <Contact />
         <Footer />

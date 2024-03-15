@@ -37,6 +37,12 @@ const ExperienceCard = ({ experience }) => (
       >
         {experience.company_name}
       </p>
+      <p
+        className="experience-desc"
+        style={{ margin: 0 }}
+      >
+        {experience.desc}
+      </p>
     </div>
   </VerticalTimelineElement>
 );
@@ -45,6 +51,7 @@ ExperienceCard.propTypes = {
   experience: PropTypes.shape({
     title: PropTypes.string.isRequired,
     company_name: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
     iconBg: PropTypes.string.isRequired,

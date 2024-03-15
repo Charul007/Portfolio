@@ -135,11 +135,12 @@ export const skillsData = [
 // EXPERIENCE DATA
 export const experienceData = [
   {
-    title: 'Web Developer',
-    company_name: 'Rudiment Webtech Solution, Indore',
+    title: 'Backend Developer',
+    company_name: ' 47Billion, IT Park Indore',
     icon: 'experience/coverhunt.png',
     iconBg: '#333333',
-    date: 'Jun 2021 - Dec 2022',
+    date: 'December 2023 until now.',
+    desc: 'Develop a Note-Sharing Application.',
   },
 ];
 

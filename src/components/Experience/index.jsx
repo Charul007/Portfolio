@@ -25,7 +25,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section id="experience">
+    <section id="experience" style={{backgroundColor:'black'}}>
       <div className="experience-container">
         <section className="experience-section">
           <Title title="Work Experience" p="WHAT I'VE DONE SO FAR" />
@@ -49,13 +49,13 @@ const Experience = () => {
                 }}
                 iconStyle={{ background: '#333333' }}
                 icon={
-                  <div className="d-flex justify-content-center align-items-center w-100 h-100">
+                  <div className="d-flex justify-content-center align-items-center w-100 h-100 ">
                     <img
                       src="icons/resume.png"
                       alt="resume"
                       style={{ width: '45%', height: '45%', objectFit: 'contain' }}
                     />
-                  </div>
+                  </div>  
                 }
               >
                 <Fade
@@ -68,7 +68,7 @@ const Experience = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="cta-btn cta-btn--hero"
+                    className="cta-btn cta-btn--hero "
                     href={resume}
                     download
                   >
